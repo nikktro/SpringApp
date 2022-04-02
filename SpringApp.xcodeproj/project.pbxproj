@@ -56,15 +56,55 @@
 		B1F491AF27F9074B00334252 /* SpringApp */ = {
 			isa = PBXGroup;
 			children = (
-				B1F491B027F9074B00334252 /* AppDelegate.swift */,
-				B1F491B227F9074B00334252 /* SceneDelegate.swift */,
-				B1F491B427F9074B00334252 /* ViewController.swift */,
-				B1F491B627F9074B00334252 /* Main.storyboard */,
-				B1F491B927F9075100334252 /* Assets.xcassets */,
-				B1F491BB27F9075100334252 /* LaunchScreen.storyboard */,
-				B1F491BE27F9075100334252 /* Info.plist */,
+				B1F491C827F90BDB00334252 /* Models */,
+				B1F491C527F90BB800334252 /* ViewControllers */,
+				B1F491C627F90BC400334252 /* Storyboards */,
+				B1F491C727F90BD200334252 /* Sources */,
+				B1F491C427F90B7900334252 /* App */,
 			);
 			path = SpringApp;
+			sourceTree = "<group>";
+		};
+		B1F491C427F90B7900334252 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1F491B027F9074B00334252 /* AppDelegate.swift */,
+				B1F491B227F9074B00334252 /* SceneDelegate.swift */,
+				B1F491BE27F9075100334252 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B1F491C527F90BB800334252 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1F491B427F9074B00334252 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B1F491C627F90BC400334252 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B1F491B627F9074B00334252 /* Main.storyboard */,
+				B1F491BB27F9075100334252 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B1F491C727F90BD200334252 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B1F491B927F9075100334252 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B1F491C827F90BDB00334252 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +329,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringApp/Info.plist;
+				INFOPLIST_FILE = SpringApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +358,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringApp/Info.plist;
+				INFOPLIST_FILE = SpringApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
