@@ -5,11 +5,11 @@
 //  Created by Nikolay Trofimov on 03.04.2022.
 //
 
-import UIKit
+import Spring
 
 class AnimationViewController: UIViewController {
     
-    @IBOutlet var animationView: UIView!
+    @IBOutlet var animationView: SpringView!
     @IBOutlet var animationLabel: UILabel!
     
     let animations = AnimationModel.getRandomAnimation()
@@ -39,6 +39,13 @@ class AnimationViewController: UIViewController {
         let currentAnimation = animations[buttonPressedCount]
         buttonPressCheck()
         let nextAnimation = animations[buttonPressedCount]
+        
+        animationView.animation = currentAnimation.animation
+        animationView.curve = currentAnimation.curve
+        animationView.force = currentAnimation.force
+        animationView.duration = currentAnimation.duration
+        animationView.repeatCount = Float(currentAnimation.repeatCount)
+        animationView.animate()
         
         animationLabel.text = description(animation: currentAnimation)
         sender.setTitle("Next \(nextAnimation.animation)", for: .normal)
